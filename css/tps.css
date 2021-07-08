@@ -26,7 +26,7 @@ a:hover, a:focus { box-shadow: none !important; }
   color: #fff;
   text-shadow: 1px 1px #000;
 }
-body.has-header-image .site-description, 
+body.has-header-image .site-description,
 body.has-header-video .site-description,
 .site-branding a:hover,
 .site-branding a:focus {
@@ -98,14 +98,24 @@ body.home .navigation-top .current_page_item > a { color: #222; }
 .tps-module .entry-title { font-size: 2rem !important; }
 .tps-module-1 .entry-title { font-size: 2.4rem !important; }
 
+/* Quote */
+.tps-quote .content {
+  font-family: 'Dancing Script', cursive, serif;
+  font-size: 2.4rem;
+}
+.tps-quote .source {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+}
+
 /* Panel */
 .panel-content .wrap > .entry-header { margin-bottom: 0; }
 .panel-content .wrap > .entry-header .entry-title { display: none; }
 
 /* Tweaking Twenty Seventeen */
-.single-post:not(.has-sidebar) #primary, 
-.page.page-one-column:not(.twentyseventeen-front-page) #primary, 
-.archive.page-one-column:not(.has-sidebar) .page-header, 
+.single-post:not(.has-sidebar) #primary,
+.page.page-one-column:not(.twentyseventeen-front-page) #primary,
+.archive.page-one-column:not(.has-sidebar) .page-header,
 .archive.page-one-column:not(.has-sidebar) #primary {
   max-width: 1000px;
 }
@@ -175,7 +185,7 @@ body.home .navigation-top .current_page_item > a { color: #222; }
   .tps-module-5 .post-thumbnail img { width: 95%; }
   .tps-module-2 .tps-module-2-content,
   .tps-module-5 .tps-module-5-content { width: 65%; }
-  
+
   .tps-module-3 {
     box-sizing: border-box;
     float: left;

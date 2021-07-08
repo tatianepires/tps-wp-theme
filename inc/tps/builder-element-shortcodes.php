@@ -26,7 +26,7 @@ function tps_title_shortcode( $atts, $content = null ) {
   if( is_null($title['class']) ) $title['class'] = '';
   else $title['class'] = sprintf('class="%s"', $title['class']);
 
-  $title_code = sprintf('<%s %s style="color:%s; text-align:%s;">%s</%s>', 
+  $title_code = sprintf('<%s %s style="color:%s; text-align:%s;">%s</%s>',
     $title['heading'], $title['class'], $title['color'], $title['text-align'], $content, $title['heading']
   );
 
@@ -139,13 +139,20 @@ function tps_quote_shortcode( $atts, $content = null ) {
   $quote = shortcode_atts( array(
     'color' => null,
     'text-align' => 'center',
+    'source' => null,
   ), $atts );
 
   if( is_null($quote['color']) ) $quote['color'] = $css['main-color'];
 
-  $quote_code = sprintf('<div style="color:%s; font-family:\'Dancing Script\', cursive, serif; font-size:2.4rem; text-align:%s;">%s</div>',
-    $quote['color'], $quote['text-align'], $content
-  );
+  if( $quote['source'] ) {
+    $quote_code = sprintf('<div class="tps-quote" style="color:%s; text-align:%s;"><div class="content">%s</div><div class="source">%s</div></div>',
+      $quote['color'], $quote['text-align'], $content, $quote['source']
+    );
+  } else {
+    $quote_code = sprintf('<div class="tps-quote" style="color:%s; text-align:%s;"><div class="content">%s</div></div>',
+      $quote['color'], $quote['text-align'], $content
+    );
+  }
 
   return $quote_code;
 }
