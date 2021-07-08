@@ -12,7 +12,7 @@ function tps_login_image() { ?>
         background-repeat: no-repeat;
     }
     #login h1 a, .login h1 a:focus,
-    #login h1 a, .login h1 a:hover { 
+    #login h1 a, .login h1 a:hover {
         border: none;
         outline: 0 !important;
     }
@@ -35,4 +35,4 @@ function tps_login_url_title() {
     $title_description = get_bloginfo('name') . ' - ' . get_bloginfo('description');
     return $title_description;
 }
-add_filter( 'login_headertitle', 'tps_login_url_title' );
+add_filter( 'login_headertext', 'tps_login_url_title' );
