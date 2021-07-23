@@ -1,0 +1,348 @@
+@import variables
+
+/* Typography */
+body,
+button,
+input,
+select,
+textarea,
+p
+  font-family: $font-text
+
+.entry-title
+  font-family: $font-condensed
+  letter-spacing: unset !important
+
+.site-title,
+.site-description,
+.h2
+  font-family: $font-cursive
+
+.page-header
+  .entry-title
+    font-family: $font-cursive
+
+/* Links */
+a:hover,
+a:focus
+  box-shadow: none !important
+
+/* Header */
+.site-title,
+.site-description
+  color: #fff
+  text-shadow: 1px 1px #000
+
+body.has-header-image,
+body.has-header-video
+  .site-description
+    opacity: 1
+
+.site-branding
+  a:hover,
+  a:focus
+    opacity: 1
+
+.site-title
+  font-size: 2.625rem
+  font-weight: normal
+  text-transform: initial
+
+.site-description
+  font-size: 1.4rem
+
+.navigation-top
+  .menu-main-container
+    ul
+      &.menu
+        font-size: 1rem
+        .current_page_item
+          > a
+            color: $c-dark-gray
+
+body.home
+  .site-title
+    font-size: 4rem
+
+body.home
+  .site-description
+    font-size: 2rem
+
+/* Entry header */
+.entry-header
+  padding-bottom: 1rem !important
+
+/* Entry title */
+.entry-title
+  font-size: 2rem !important
+  font-weight: normal !important
+  text-transform: initial !important
+
+.single-post,
+.page,
+.post-type-archive-post_en
+  .entry-title
+    font-size: 2.6rem !important
+
+.entry-header
+  .entry-title
+    a:hover
+      text-decoration: none !important
+
+/* Titles */
+.h2
+  display: block
+  font-size: 2.6rem
+  font-weight: normal
+
+/* Rows and Columns */
+.tps_row
+  margin-bottom: 8px
+.tps_row::after
+  content: ''
+  display: table
+  clear: both
+.tps_col
+  padding: 8px
+  &:first-child
+    padding-left: 0
+  &:last-child
+    padding-right: 0
+
+/* Blocks and Modules */
+.tps-block-3,
+.tps-module-2,
+.tps-module-5
+  &::after
+    content: ''
+    display: table
+    clear: both
+.tps-module
+  margin-bottom: 1.5rem
+.tps-block-3,
+.tps-module-1
+  margin-bottom: 2.5rem
+.tps-module
+  .entry-title
+    font-size: 2rem !important
+.tps-module-1
+  .entry-title
+    font-size: 2.4rem !important
+
+/* Quote */
+.tps-quote
+  .content
+    font-family: $font-cursive
+    font-size: 2.4rem
+  .source
+    font-family: $font-text
+    font-size: 1.2rem
+
+/* Panel */
+.panel-content
+  .wrap
+    > .entry-header
+      margin-bottom: 0
+      .entry-title
+        display: none
+
+/* Tweaking Twenty Seventeen */
+.single-post:not(.has-sidebar),
+.page.page-one-column:not(.twentyseventeen-front-page),
+.archive.page-one-column:not(.has-sidebar)
+  #primary
+    max-width: 1000px
+.archive.page-one-column:not(.has-sidebar)
+  .page-header
+    max-width: 1000px
+.page.page-one-column
+  .entry-header
+    margin-bottom: 0
+.single.has-sidebar,
+.post-type-archive-post_en
+  #primary
+    float: none !important
+    width: 100% !important
+.page-blog,
+.post-type-archive-post_en
+  .navigation.pagination
+    width: 100%
+.twentyseventeen-panel
+  border: none !important
+.twentyseventeen-panel:nth-child(2n)
+  background-color: #fbfbfb
+.single
+  .entry-meta
+    .byline
+      display: none
+.post-thumbnail
+   a:hover,
+   a:focus
+     img
+       opacity: unset
+.site-footer
+  margin-top: 0
+
+/* Other */
+.tps-float-breaker
+  float: left
+  width: 100%
+
+/* Notes on posts */
+body.single article
+  .tps-alert,
+  .tps-download,
+  .tps-editorial,
+  .tps-info,
+  .tps-music,
+  .tps-note,
+  .tps-warning
+    display: block
+    margin: 10px 0
+    padding: 10px 10px 10px 50px
+    position: relative
+    border-width: 1px
+    border-style: solid
+    border-radius: 5px
+    &::before
+      position: absolute
+      top: 5px
+      left: 15px
+      font-family: $font-awesome
+      font-size: 1.5rem
+
+body.single
+  article
+    .tps-alert
+      color: $c-orange-box-text
+      background-color: $c-orange-box-background
+      border-color: $c-orange-box-border
+      &::before
+        content: "\f12a"
+      a
+        color: $c-orange-box-text
+
+body.single
+  article
+    .tps-editorial
+      color: $c-gray-box-text
+      background-color: $c-gray-box-background
+      border-color: $c-gray-box-border
+      &::before
+        content: "\f044"
+      a
+        color: $c-gray-box-text
+
+body.single
+  article
+    .tps-download
+      color: $c-green-box-text
+      background-color: $c-green-box-background
+      border-color: $c-green-box-border
+      &::before
+        content: "\f019"
+      a
+        color: $c-green-box-text
+
+body.single
+  article
+    .tps-info,
+    .tps-music
+      color: $c-blue-box-text
+      background-color: $c-blue-box-background
+      border-color: $c-blue-box-border
+      a
+        color: $c-blue-box-text
+    .tps-info
+      &::before
+        content: "\f129"
+    .tps-music
+      &::before
+        content: "\f001"
+
+body.single
+  article
+    .tps-note
+      color: $c-yellow-box-text
+      background-color: $c-yellow-box-background
+      border-color: $c-yellow-box-border
+      &::before
+        content: "\f249"
+      a
+        color: $c-yellow-box-text
+
+body.single
+  article
+    .tps-warning
+      color: $c-red-box-text
+      background-color: $c-red-box-background
+      border-color: $c-red-box-border
+      &::before
+        content: "\f12a"
+      a
+        color: $c-red-box-text
+
+/* Media queries */
+/* @media screen and (min-width: 20em)  */
+
+@media screen and (min-width: 30em)
+  .page-one-column .wrap
+    max-width: 1000px !important
+    padding-top: 1em
+    padding-bottom: 2em
+
+  /* Rows and Columns */
+  .tps_col
+    float: left
+    box-sizing: border-box
+
+  .tps_col_100
+    width: 100%
+  .tps_col_80
+    width: 80%
+  .tps_col_75
+    width: 75%
+  .tps_col_66
+    width: 66.666%
+  .tps_col_60
+    width: 60%
+  .tps_col_50
+    width: 50%
+  .tps_col_40
+    width: 40%
+  .tps_col_33
+    width: 33.333%
+  .tps_col_25
+    width: 25%
+  .tps_col_20
+    width: 20%
+
+  /* Blocks and Modules */
+  .tps-module-2,
+  .tps-module-5
+    .post-thumbnail
+      float: left
+      width: 35%
+      img
+        width: 95%
+  .tps-module-2,
+    .tps-module-2-content
+      float: left
+      width: 65%
+  .tps-module-5
+    .tps-module-5-content
+      float: left
+      width: 65%
+
+  .tps-module-3
+    box-sizing: border-box
+    float: left
+    width: 50%
+    padding-left: 8px
+    padding-right: 8px
+
+@media screen and (min-width: 48em)
+  .site-content
+    padding-top: 2.5rem
+
+/*@media screen and ( min-width: 79em ) */
