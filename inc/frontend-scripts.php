@@ -19,6 +19,9 @@ function tps_frontend_scripts() {
     'font-awesome-light' => array(
       'src' => get_stylesheet_directory_uri() . '/third-party/font-awesome/css/light.min.css',
     ),
+    'font-awesome-brands' => array(
+      'src' => get_stylesheet_directory_uri() . '/third-party/font-awesome/css/brands.min.css',
+    ),
   );
 
   // Enqueue third party styles
