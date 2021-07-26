@@ -392,8 +392,7 @@ body.single article .tps-warning a {
     width: 95%;
   }
 
-  .tps-module-2,
-.tps-module-2-content {
+  .tps-module-2 .tps-module-2-content {
     float: left;
     width: 65%;
   }
