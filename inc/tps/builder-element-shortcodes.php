@@ -44,6 +44,7 @@ function tps_button_shortcode( $atts, $content = null ) {
     'background-color' => null,
     'color' => null,
     'icon' => null, // font awesome icon fa-NAME
+    'type' => 'fal', // font awesome 5 type: fal, fab, ...
     'class' => null,
   ), $atts );
 
@@ -53,7 +54,7 @@ function tps_button_shortcode( $atts, $content = null ) {
   else $button['class'] = sprintf('class="%s"', $button['class']);
 
   if( is_null($button['icon']) ) $button['icon'] = '';
-  else $button['icon'] = sprintf('<i class="fa fa-%s"></i> ', $button['icon']);
+  else $button['icon'] = sprintf('<i class="%s fa-%s"></i> ', $button['type'], $button['icon']);
 
   if( is_null($button['background-color']) ) $button['background-color'] = $css['main-color'];
   if( is_null($button['color']) ) $button['color'] = '#fff';
@@ -78,6 +79,7 @@ function tps_buttons_shortcode( $atts ) {
     'urls' => null,
     'texts' => null,
     'icons' => null, // font awesome icon fa-NAME
+    'type' => 'fal', // font awesome 5 type: fal, fab, ...
     'titles' => null,
     'text-align' => 'left',
     'background-color' => null,
@@ -106,7 +108,7 @@ function tps_buttons_shortcode( $atts ) {
     if( isset($buttons['texts'][$i]) ) $text = $buttons['texts'][$i];
 
     $icon = '';
-    if( isset($buttons['icons'][$i]) && $buttons['icons'][$i] != '0'  ) $icon = sprintf('<i class="fa fa-%s"></i> ', $buttons['icons'][$i]);
+    if( isset($buttons['icons'][$i]) && $buttons['icons'][$i] != '0'  ) $icon = sprintf('<i class="%s fa-%s"></i> ', $buttons['type'], $buttons['icons'][$i]);
 
     $title = '';
     if( isset($buttons['titles'][$i]) && $buttons['titles'][$i] != '0'  ) $title = sprintf('title="%s"', $buttons['titles'][$i]);

@@ -1,12 +1,18 @@
-Tatiane Pires Theme
-============
+# Tatiane Pires Theme
 
 This is the theme for [Blog da Tatiane Pires](https://tatianepires.com.br) WordPress blog, it's a [child theme](https://codex.wordpress.org/Child_Themes) of [Twenty Seventeen](https://wordpress.org/themes/twentyseventeen/).
 
 Copyright Tatiane Pires.
 
-License
--------
+# Sass
+
+Install [npm](https://www.npmjs.com/) and [Sass](https://sass-lang.com/) to run `sass sass/style.sass:css/tps.css` and compile the CSS.
+
+# License
+
+The license applies to the theme, except third party code under `/third-party` directory. Content under `/third-party` is subjected to licenses from respective vendors.
+
+## GPLv3
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
