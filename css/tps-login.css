@@ -1,0 +1,5 @@
+body.login #loginform,
+body.login .jetpack-sso-wrap .jetpack-sso-or,
+body.login .jetpack-sso-wrap .wpcom {
+  display: none;
+}
