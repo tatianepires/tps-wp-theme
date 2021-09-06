@@ -5,7 +5,7 @@ body.login #login #loginform #user_pass,
 body.login #login #loginform .forgetmenot,
 body.login #login #loginform .submit #wp-submit,
 body.login #login #nav,
-body.login .jetpack-sso-wrap .jetpack-sso-or,
-body.login .jetpack-sso-wrap .wpcom {
+body.login #jetpack-sso-wrap .jetpack-sso-or,
+body.login #jetpack-sso-wrap .wpcom {
   display: none;
 }
