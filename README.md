@@ -6,7 +6,7 @@ Copyright Tatiane Pires.
 
 # Sass
 
-Install [npm](https://www.npmjs.com/) and [Sass](https://sass-lang.com/) to run `sass sass/style.sass:css/tps.css` and compile the CSS.
+Install [npm](https://www.npmjs.com/) and [Sass](https://sass-lang.com/) to run `sass sass/style.sass:css/tps.css` and `sass sass/style.sass:css/tps.min.css --style compressed` to compile the CSS.
 
 # License
 
