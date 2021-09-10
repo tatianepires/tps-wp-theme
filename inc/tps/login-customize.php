@@ -36,11 +36,3 @@ function tps_login_url_title() {
     return $title_description;
 }
 add_filter( 'login_headertext', 'tps_login_url_title' );
-
-/*
- * Hide login form
- */
-function tps_login_stylesheet() {
-    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/css/tps-login.css' );
-}
-add_action( 'login_enqueue_scripts', 'tps_login_stylesheet' );
