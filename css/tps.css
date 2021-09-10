@@ -57,9 +57,11 @@ body.has-header-video .site-description {
   font-size: 1.4rem;
 }
 
+.navigation-top .main-navigation ul.menu,
 .navigation-top .menu-main-container ul.menu {
   font-size: 1rem;
 }
+.navigation-top .main-navigation ul.menu .current_page_item > a,
 .navigation-top .menu-main-container ul.menu .current_page_item > a {
   color: #222;
 }
@@ -332,7 +334,6 @@ body.single article .tps-warning a {
   .page-one-column .wrap {
     max-width: 1000px !important;
     padding-top: 1em;
-    padding-bottom: 2em;
   }
 
   /* Rows and Columns */
