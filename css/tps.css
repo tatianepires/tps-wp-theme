@@ -390,6 +390,10 @@ body.single article .tps-warning a {
     width: 20%;
   }
 
+  .tps_col_16 {
+    width: 16.67%;
+  }
+
   /* Blocks and Modules */
   .tps-module-2 .post-thumbnail,
 .tps-module-5 .post-thumbnail {
